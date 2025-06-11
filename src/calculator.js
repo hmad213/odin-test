@@ -6,7 +6,7 @@ let calculator = (function () {
       return "Invalid value! Please enter a number!";
     }
   };
-  
+
   let subtract = function (a, b) {
     if (typeof a === "number" && typeof b === "number") {
       return a - b;
@@ -25,16 +25,16 @@ let calculator = (function () {
 
   let divide = function (a, b) {
     if (typeof a === "number" && typeof b === "number") {
-        if(b !== 0){
-          return a / b;
-        }
-        return "Divide by zero error!";
+      if (b !== 0) {
+        return a / b;
+      }
+      return "Divide by zero error!";
     } else {
       return "Invalid value! Please enter a number!";
     }
   };
 
-  return {add, subtract, multiply, divide};
+  return { add, subtract, multiply, divide };
 })();
 
-export {calculator};
+export { calculator };
